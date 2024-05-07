@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous:regular);
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Urbanist:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 * {
     margin: 0;
@@ -16,22 +17,49 @@
     font-family: 'Inter';
 }
 
-.hero-main {
-    font-family: 'Righteous';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 93px;
-    color: #FFFFFF;
+.hero-upper {
     padding: 0 375px;
-}
-
-.hero-main {
+    padding-top: 147px;
     background-image: url("assets/Coffee.jpg");
     background-position: bottom right;
-    /* background-repeat: no-repeat; */
     background-size: cover;
-    height: 760px;
+}
+
+.hero-text {
+    max-width: 530px;
+    padding-bottom: 166px;
+}
+
+.hero-main-text {
+    font-family: Righteous;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 93.6px;
+    color: white;
+}
+
+.hero-sub-text {
+    font-family: "Urbanist";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.hero-button {
+    padding: 24px 32px;
+    background-color: #C99E71;
+    border-radius: 2px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
 }
 
 ul {
@@ -55,13 +83,3 @@ i {
     font-size: 18px;
     color: #FFFFFF;
 }
-
-/* .text {
-    font-family: 'Righteous';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 260px;
-    line-height: 32px;
-    color: #FFFFFF;
-    height: 720px;
-} */
