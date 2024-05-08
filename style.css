@@ -35,16 +35,15 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 34px;
     padding-top: 140px;
-    padding-bottom: 140px;
 }
 
 .hero-text {
     max-width: 530px;
 }
 
-.hero-main-text {
+.hero-upper-text {
     font-family: Righteous;
     font-size: 72px;
     font-weight: 400;
@@ -52,7 +51,7 @@
     color: white;
 }
 
-.hero-sub-text {
+.hero-upper-sub-text {
     font-family: "Urbanist";
     font-size: 20px;
     font-weight: 500;
@@ -60,6 +59,48 @@
     color: rgba(255, 255, 255, 0.8);
     padding-top: 32px;
     padding-bottom: 64px;
+}
+
+.hero-column {
+    display: flex;
+    gap: 32px;
+}
+
+.two-photo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: max-content;
+}
+
+.custom-img-column {
+    width: 238px;
+}
+
+.hero-column-text {
+    max-width: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px;
+    background-color: rgba(28, 24, 20, 1);
+}
+
+.hero-main-text {
+    font-family: "Righteous";
+    font-size: 48px;
+    font-weight: 400;
+    
+    color: white;
+}
+
+.hero-sub-text {
+    font-family: "Urbanist";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 36px;
 }
 
 .hero-button {
@@ -91,6 +132,15 @@ h2 {
     color: #FFFFFF;
 }
 
+h4 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #C99E71;
+    padding-bottom: 12px;
+}
+
 ul {
     display: flex;
     gap: 48px;
@@ -114,7 +164,7 @@ i {
 }
 
 .custom-img {
-    width: calc(16vw - 1px);
+    width: 322px;
     height: auto;
     max-width: 100%; 
 }
