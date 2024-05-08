@@ -20,14 +20,28 @@
 .hero-upper {
     padding: 0 375px;
     padding-top: 147px;
+    padding-bottom: 166px;
     background-image: url("assets/Coffee.jpg");
     background-position: bottom right;
     background-size: cover;
 }
 
+.hero-main {
+    padding: 0 375px;
+    background-color: #14110Eff;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
 .hero-text {
     max-width: 530px;
-    padding-bottom: 166px;
 }
 
 .hero-main-text {
@@ -62,6 +76,21 @@
     border: none;
 }
 
+.hero-photo-block {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 24px;
+}
+
+h2 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
 ul {
     display: flex;
     gap: 48px;
@@ -83,3 +112,25 @@ i {
     font-size: 18px;
     color: #FFFFFF;
 }
+
+.custom-img {
+    width: calc(16vw - 1px);
+    height: auto;
+    max-width: 100%; 
+}
+
+@media (max-width: 1700px) {
+    .custom-img {
+        width: 310px;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .block {
+        flex-direction: column;
+    }
+}
+
