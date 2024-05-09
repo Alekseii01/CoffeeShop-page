@@ -63,6 +63,8 @@
 
 .hero-column {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
 }
 
@@ -78,7 +80,7 @@
 }
 
 .hero-column-text {
-    max-width: 515px;
+    max-width: 462px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +102,23 @@
     font-weight: 500;
     line-height: 28.8px;
     color: rgba(255, 255, 255, 0.6);
-    padding-top: 36px;
+}
+
+.product-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px;
+    gap: 20px;
+    background-color: rgba(18, 19, 21, 1);
 }
 
 .hero-button {
@@ -123,11 +141,15 @@
     padding-bottom: 24px;
 }
 
+.brown {
+    color: rgba(201, 158, 113, 1);
+}
+
 h2 {
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 23px;
     line-height: 30px;
     color: #FFFFFF;
 }
@@ -138,7 +160,6 @@ h4 {
     font-weight: 300;
     font-size: 18px;
     color: #C99E71;
-    padding-bottom: 12px;
 }
 
 ul {
