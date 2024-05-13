@@ -17,7 +17,7 @@
     font-family: 'Inter';
 }
 
-.hero-upper {
+.header {
     padding: 0 375px;
     padding-top: 147px;
     padding-bottom: 166px;
@@ -39,11 +39,11 @@
     padding-top: 140px;
 }
 
-.hero-text {
+.header-text {
     max-width: 530px;
 }
 
-.hero-upper-text {
+.header-main-text {
     font-family: Righteous;
     font-size: 72px;
     font-weight: 400;
@@ -51,7 +51,7 @@
     color: white;
 }
 
-.hero-upper-sub-text {
+.header-sub-text {
     font-family: "Urbanist";
     font-size: 20px;
     font-weight: 500;
@@ -179,7 +179,6 @@ a {
 }
 
 i {
-    cursor: pointer;
     font-size: 18px;
     color: #FFFFFF;
 }
@@ -188,6 +187,27 @@ i {
     width: 322px;
     height: auto;
     max-width: 100%; 
+}
+
+.hide_button {
+    display: none;
+    opacity: 0;
+}
+
+.product:hover .hide {
+    transition: all 0.5s ease;
+    display: none;
+    opacity: 0;
+}
+
+.product:hover .hide_button {
+    transition: all 0.5s ease;
+    display: flex;
+    opacity: 1;
+    max-height: 49px;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
 }
 
 @media (max-width: 1700px) {
