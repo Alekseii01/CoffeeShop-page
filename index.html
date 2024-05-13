@@ -9,14 +9,14 @@
     <title>CoffeeShop</title>
   </head>
   <body>
-    <section class="hero-nav">
+    <header class="hero-nav">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Menu</a></li>
         <li><a href="#">Reservation</a></li>
       </ul>
-      <img src="assets/Logo.png" alt="logo" />
+      <img src="assets/Logo.png" alt="logo" style="margin: 0 15px;"/>
 
       <ul>
         <li><a href="#">Page</a></li>
@@ -25,22 +25,23 @@
         <li><i class="fas fa-search"></i></li>
         <li><i class="fas fa-shopping-cart"></i></li>
       </ul>
-    </section>
+    </header>
 
-    <header class="header">
-      <div class="header-text">
-        <h1 class="header-main-text">Enjoy Your Morning Coffee.</h1>
-        <p class="header-sub-text">
+    <article class="article">
+      <div class="article-text">
+        <h1 class="article-main-text">Enjoy Your Morning Coffee.</h1>
+        <p class="article-sub-text">
           The coffee is brewed by first roasting the green coffee beans over hot
           coals in a brazier. Given to Opportunity
         </p>
-        <button class="hero-button">Test Coffee</button>
+        <button class="article-button">Test Coffee</button>
       </div>
-    </header>
+    </article>
 
-    <section class="hero-main">
-      <div class="block">
-        <div>
+    <main class="hero-main">
+
+      <section class="block-column">
+        <div class="item-column">
           <div class="hero-photo-block">
             <h2 style="color: rgba(201, 158, 113, 1);">01</h2>
             <h2>Best Coffee Flavor</h2>
@@ -48,32 +49,34 @@
           <img src="assets/Rectangle 1.png" alt="Rectangle 1" class="custom-img" />
         </div>
 
-        <div>
+        <div class="item-column">
           <div class="hero-photo-block">
             <h2 style="color: rgba(201, 158, 113, 1);">02</h2>
             <h2>Place to get lost</h2>
           </div>
           <img src="assets/Rectangle 2.png" alt="Rectangle 1" class="custom-img" />
         </div>
-        <div>
+        <div class="item-column">
           <div class="hero-photo-block">
             <h2 style="color: rgba(201, 158, 113, 1);">03</h2>
             <h2>Proper roasting</h2>
           </div>
           <img src="assets/Rectangle 3.png" alt="Rectangle 1" class="custom-img" />
         </div>
-      </div>
+      </section>
 
-      <div class="block">
+      <section class="block">
         <div class="hero-column">
+          <div class="hero-column two-photo-direction">
             <div class="two-photo">
                 <img src="assets/Rectangle 2.png" alt="Rectangle 1" class="custom-img-column" />
                 <img src="assets/Rectangle 1.png" alt="Rectangle 1" class="custom-img-column" />
             </div>
 
-            <div>
-                <img src="assets/Rectangle 4.png" alt="Rectangle 1" class="custom-img-block" style="width: 271px;"/>
+            <div style="max-width: 300px; display: flex;">
+                <img src="assets/Rectangle 4.png" alt="Rectangle 1" class="custom-img-block"/>
             </div>
+          </div>
 
             <div class="hero-column-text">
                 <h4 style="color: rgba(201, 158, 113, 1);">Our history</h4>
@@ -83,15 +86,15 @@
                 <p class="hero-sub-text" style="padding-top: 36px;">Mauris Rhoncus In Imperdiet Placerat. Vestibu Emismd Nisl Suscirpit Ligula Volutpat, A Feyguat Urn Maxmaus. Cars Massa Nibhtincidunt. Donec Et Nibh Maximus, Est Eu, Mattis Nuce. Preasent Ut Quam Quis Quam Venen Atis Fringilla. Morbi Vastibulum Id Tells Mmodo Mattis. Aliauam Erat Volutpal.</p>
             </div>
         </div>
-      </div>
+      </section>
 
-      <div class="block">
+      <section class="block">
         <div>
           <h4 style="color: rgba(201, 158, 113, 1); width: max-content; margin: 0 auto;">Popular Product</h4>
           <h1 class="hero-main-text">Coffee popular Product</h1>
         </div>
 
-        <div class="hero-column">
+        <div class="hero-column-direction hero-column">
           <div class="product">
             <img src="assets/Rectangle 5.png" alt="Rectangle 5" class="custom-img-column" />
             <div class="product-stars hide">
@@ -107,7 +110,7 @@
             <h2>BRAZIL COFFEE GRED</h2>
             <p class="hero-sub-text hide">Price - <span class="brown">$320.00/</span> $358</p>
 
-            <button class="hero-button hide_button"><i class="fas fa-bag-shopping"></i>Add to cart</button>
+            <button class="article-button hide_button"><i class="fas fa-bag-shopping"></i>Add to cart</button>
           </div>
 
           <div class="product">
@@ -125,7 +128,7 @@
             <h2>BRAZIL COFFEE GRED</h2>
             <p class="hero-sub-text hide">Price - <span class="brown">$320.00/</span> $358</p>
 
-            <button class="hero-button hide_button"><i class="fas fa-bag-shopping"></i>Add to cart</button>
+            <button class="article-button hide_button"><i class="fas fa-bag-shopping"></i>Add to cart</button>
           </div>
 
           <div class="product">
@@ -143,15 +146,15 @@
             <h2>BRAZIL COFFEE GRED</h2>
             <p class="hero-sub-text hide">Price - <span class="brown">$320.00/</span> $358</p>
 
-            <button class="hero-button hide_button"><i class="fas fa-bag-shopping"></i>Add to cart</button>
+            <button class="article-button hide_button"><i class="fas fa-bag-shopping"></i>Add to cart</button>
           </div>
 
         </div>
-      </div>
+      </section>
 
 
 
 
-    </section>
+    </main>
   </body>
 </html>
