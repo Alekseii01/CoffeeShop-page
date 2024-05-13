@@ -84,7 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    max-width: 270px;
+    max-width: 285px;
 }
 
 .item-column {
@@ -198,41 +198,58 @@ i {
 
 .hide_button {
     display: none;
+    visibility: hidden;
     opacity: 0;
 }
 
 .product:hover .hide {
-    transition: all 0.5s ease;
     display: none;
-    opacity: 0;
+    visibility: hidden;
 }
 
 .product:hover .hide_button {
-    transition: all 0.5s ease;
     display: flex;
-    opacity: 1;
+    visibility: visible;
     max-height: 49px;
     gap: 12px;
     align-items: center;
     cursor: pointer;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* @keyframes fadeOut {    doesn't work
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none; 
+    }
+} */
+
+.hide_button {
+    animation: fadeIn 0.5s ease forwards; 
+}   
+
+/* .product:not(:hover) .hide_button {
+    animation: fadeOut 0.5s ease forwards; 
+}  */
+
 .product img {
     max-width: 100%;
     height: auto;
 }
 
-
-
-
-.custom-img-column {
+.custom-img {
     max-width: 100%;
-    height: auto;
-}
-
-.custom-img-block {
-    max-width: 100%;
-    height: auto;
 }
 
 @media (max-width: 1000px) {
@@ -256,7 +273,6 @@ i {
     }
     .block-column {
         column-count: 1;
-
     }
     .item-column {
         padding-top: 20px;
