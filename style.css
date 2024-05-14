@@ -26,8 +26,14 @@ body {
     padding-top: 147px;
     padding-bottom: 166px;
     background-image: url("assets/Coffee.jpg");
-    background-position: bottom right;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+
+.logo {
+    margin: 0 15px;
 }
 
 .hero-main {
@@ -42,10 +48,7 @@ body {
 }
 
 .block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
+    margin: 0 auto;
     padding-top: 140px;
 }
 
@@ -95,6 +98,7 @@ body {
 
 .hero-column-text {
     max-width: 462px;
+    min-width: 462px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,11 +162,36 @@ body {
     color: rgba(201, 158, 113, 1);
 }
 
+.product-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px;
+    background-color: rgba(28, 24, 20, 1);
+}
+
+.product-card-text {
+    max-width: 520px;
+}
+
+.product-text-size {
+    padding: 36px 0;
+}
+
 h2 {
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 22px;
     line-height: 30px;
     color: #FFFFFF;
 }
@@ -253,21 +282,25 @@ i {
 }
 
 @media (max-width: 1000px) {
+    .article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .hero-column {
         flex-direction: column-reverse;
+        align-items: center;
     }
     .two-photo-direction {
         flex-direction: row;
+        align-items: stretch;
     }
     .hero-column-text {
-        max-width: 600px;
+        max-width: 615px;
     }
     .hero-column-direction {
         flex-direction: row;
     }
-}
-
-@media (max-width: 907px) {
     .hero-column-direction {
         flex-direction: column;
     }
@@ -280,6 +313,11 @@ i {
         margin: 0 auto;
     }
     .article-text {
+        margin: 0 auto;
+    }
+
+    .product-card {
+        max-width: 610px;
         margin: 0 auto;
     }
 }
