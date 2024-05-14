@@ -97,8 +97,8 @@ body {
 }
 
 .hero-column-text {
-    max-width: 462px;
-    min-width: 462px;
+    max-width: 542px;
+    min-width: 542px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,5 +319,6 @@ i {
     .product-card {
         max-width: 610px;
         margin: 0 auto;
+        gap: 24px;
     }
 }
