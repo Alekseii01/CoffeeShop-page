@@ -98,12 +98,18 @@ body {
 
 .hero-column-text {
     max-width: 542px;
-    min-width: 542px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 56px;
     background-color: rgba(28, 24, 20, 1);
+}
+
+.hero-main-title {
+    font-family: "Righteous";
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
 }
 
 .hero-main-text {
@@ -186,6 +192,34 @@ body {
 .product-text-size {
     padding: 36px 0;
 }
+
+.product-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(50% - 36px);
+    padding: 24px;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box; 
+}
+
+.product-img { 
+    display: flex;
+    align-items: center;
+    width: 72px;
+    padding-right: 20px;
+}
+
+.product-price {
+    margin-left: auto;
+}
+
 
 h2 {
     font-family: 'Righteous';
@@ -272,6 +306,11 @@ i {
     animation: fadeOut 0.5s ease forwards; 
 }  */
 
+.coffee-photo {
+    display: flex;
+    max-width: 226px;
+}
+
 .product img {
     max-width: 100%;
     height: auto;
@@ -320,5 +359,23 @@ i {
         max-width: 610px;
         margin: 0 auto;
         gap: 24px;
+    }
+    .product-columns {
+        padding: 0 40px;
+    }
+    .product-card-text > button {
+        width: 100%;
+    }
+    .coffee-photo {
+        max-width: 200px
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-main-text {
+        padding: 0 24px;
+    }
+    .two-photo {
+        max-width: 170px;
     }
 }
