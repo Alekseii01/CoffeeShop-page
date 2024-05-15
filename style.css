@@ -213,6 +213,7 @@ body {
     display: flex;
     align-items: center;
     width: 72px;
+    min-width: 72px;
     padding-right: 20px;
 }
 
@@ -376,6 +377,6 @@ i {
         padding: 0 24px;
     }
     .two-photo {
-        max-width: 170px;
+        /* max-width: 170px; */
     }
 }
