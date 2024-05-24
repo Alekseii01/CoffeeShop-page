@@ -12,7 +12,7 @@ body {
     background-color: #14110Eff;
 }
 
-.hero-nav {
+.navbar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -58,7 +58,7 @@ body {
 }
 
 .article-main-text {
-    font-family: Righteous;
+    font-family: "Righteous";
     font-size: 72px;
     font-weight: 400;
     line-height: 93.6px;
@@ -221,6 +221,91 @@ body {
     margin-left: auto;
 }
 
+.testimonial-container {
+    text-align: center;
+    width: 80%;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 56px;
+}
+
+.testimonial-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 600%;
+    gap: 40px;
+}
+
+.testimonial {
+    padding: 40px;
+    background-color: rgba(28, 24, 20, 1);
+    min-width: 535px;
+}
+
+.testimonial-img {
+    display: flex;
+    max-width: 485px;
+    gap: 24px;
+}
+
+.testimonial-img-size {
+    width: 130px;
+}
+
+.author-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 28px;
+}
+
+.progress-container {
+    padding-top: 36px;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brown-bar { 
+    width: 20%; 
+    height: 4px;
+    border-radius: 3px;
+    background-color: rgba(201, 158, 113, 1);
+    transition: width 0.5s ease-in-out; 
+}
+
+.progress-bar {
+    width: 120px; 
+    height: 4px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 3px;
+    position: relative; 
+}
+
+
+.progress-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: rgba(18, 19, 21, 1);
+    margin-left: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.progress-button:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(201, 158, 113, 1);
+}
+
+.progress-button:active {
+    transition: all 0.1s ease-in-out;
+    background-color: rgba(201, 158, 113, .3);
+}
 
 h2 {
     font-family: 'Righteous';
@@ -239,7 +324,7 @@ h4 {
     color: #C99E71;
 }
 
-ul {
+.nav ul {
     display: flex;
     gap: 48px;
     list-style: none;
@@ -375,8 +460,5 @@ i {
 @media (max-width: 500px) {
     .hero-main-text {
         padding: 0 24px;
-    }
-    .two-photo {
-        /* max-width: 170px; */
     }
 }
