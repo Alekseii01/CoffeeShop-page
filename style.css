@@ -189,6 +189,48 @@ body {
     max-width: 520px;
 }
 
+.reservation-img {
+    max-width: 550px;
+}
+
+.reservation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reservation-block {
+    max-width: 585px;
+    padding: 72px 42px;
+    background-color: rgba(28, 24, 20, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 56px 0;
+    width: -webkit-fill-available;
+}
+
+.reservation-form > input {
+    padding: 16px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(20, 17, 14, 1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+}
+
 .product-text-size {
     padding: 36px 0;
 }
@@ -405,6 +447,10 @@ i {
 .custom-img {
     max-width: 100%;
 }
+
+#map {
+    height: 100%;
+  }
 
 @media (max-width: 1000px) {
     .article {
