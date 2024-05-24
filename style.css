@@ -430,10 +430,6 @@ i {
     animation: fadeIn 0.5s ease forwards; 
 }   
 
-/* .product:not(:hover) .hide_button {
-    animation: fadeOut 0.5s ease forwards; 
-}  */
-
 .coffee-photo {
     display: flex;
     max-width: 226px;
