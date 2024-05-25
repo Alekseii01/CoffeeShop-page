@@ -22,6 +22,16 @@ body {
     font-family: 'Inter';
 }
 
+.navbar-footer {
+    max-width: 1110px;
+    padding-top: 166px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Inter';
+}
+
 .article {
     padding-top: 147px;
     padding-bottom: 166px;
@@ -221,15 +231,54 @@ body {
     padding: 16px;
     border-radius: 2px;
     border: none;
-    background-color: rgba(20, 17, 14, 1);
+    background-color: rgba(20, 17, 14, 1);;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
-
 }
+
+.navbar-footer > form {
+    position: relative;
+    margin: 1em;
+    margin-left: 60px;
+  }
+  
+.footer-input > input {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 36px;
+    height: 72px;
+    border: none;
+    background-color: rgba(28, 24, 20, 1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+  
+  .footer-input > button {
+    position: absolute;
+    right: 1em;
+    top: .6em;
+    text-transform: capitalize;
+    padding: 14px;
+    background-color: #C99E71;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 22px 44px 0px rgba(201, 158, 113, 0.2);
+  }
 
 .product-text-size {
     padding: 36px 0;
@@ -305,6 +354,26 @@ body {
     padding-top: 28px;
 }
 
+.news-text {
+    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: rgba(28, 24, 20, 1);
+}
+
+.footer {
+    padding-top: 78px;
+}
+
+.footer-text {
+    padding: 32px;
+    background-color: rgba(28, 24, 20, 1);
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+}
+
 .progress-container {
     padding-top: 36px;
     max-width: 1110px;
@@ -366,9 +435,10 @@ h4 {
     color: #C99E71;
 }
 
-.nav ul {
+.nav ul,
+footer ul {
     display: flex;
-    gap: 48px;
+    gap: 40px;
     list-style: none;
     font-style: normal;
     font-weight: 400;
@@ -440,8 +510,15 @@ i {
     height: auto;
 }
 
+.news-img {
+    max-height: 308px;
+    max-width: 348px;
+    display: -webkit-flex;
+}
+
 .custom-img {
     max-width: 100%;
+    max-height: -webkit-fill-available;
 }
 
 #map {
