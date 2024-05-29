@@ -321,6 +321,7 @@ body {
     display: flex;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
     width: 100%;
     padding-top: 56px;
 }
@@ -345,7 +346,8 @@ body {
 }
 
 .testimonial-img-size {
-    width: 130px;
+    min-width: 130px;
+    max-width: 130px;
 }
 
 .author-info {
@@ -521,6 +523,10 @@ i {
     max-height: -webkit-fill-available;
 }
 
+.testimonial-img {
+    min-height: 155px;
+}
+
 #map {
     height: 100%;
   }
@@ -573,6 +579,12 @@ i {
     }
     .coffee-photo {
         max-width: 200px
+    }
+    .testimonial-slider {
+        max-width: 535px;
+    }
+    .progress-container {
+        justify-content: space-evenly;
     }
 }
 
