@@ -83,9 +83,13 @@ document.addEventListener('DOMContentLoaded', function() {
   function resizeMobileNav() {
     if (document.documentElement.clientWidth > 1000) {
       mobileNav.classList.remove('active');
-      mobileNav.style.display = 'none';
+      setTimeout(() => {
+        navElement.style.display = 'none';
+      }, 300);
       footerNav.classList.remove('active');
-      footerNav.style.display = 'none';
+      setTimeout(() => {
+        navElement.style.display = 'none';
+      }, 300);
     }
   }
 
