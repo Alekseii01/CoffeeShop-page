@@ -44,7 +44,7 @@ body {
 }
 
 .logo {
-    margin: 0 15px;
+    margin: 0 5px;
 }
 
 .hero-main {
@@ -248,7 +248,7 @@ body {
 .footer-input {
     position: relative;
     margin: 1em;
-    margin-left: calc(20px + 1%);
+    margin-left: calc(1%);
     min-width: 200px;
   }
   
