@@ -42,6 +42,16 @@ function updateIndex(delta) {
   }
 }
 
+function updateSlidePosition() {
+  const slideWidth = testimonialSlide.children[0].getBoundingClientRect().width + 40;
+  testimonialSlide.style.transform = `translateX(-${(currentIndex - 1) * slideWidth}px)`;
+  currentSlideIndicator.textContent = document.documentElement.clientWidth > 1000 ? currentIndex + 1 : currentIndex;
+
+  const totalSlides = testimonialSlide.children.length;
+  const progressWidth = document.documentElement.clientWidth > 1000 ? ((currentIndex) / (totalSlides - 1)) * 100 : ((currentIndex - 1) / (totalSlides - 1)) * 100;
+  progressBar.style.width = `${progressWidth}%`;
+  }
+
 document.addEventListener('DOMContentLoaded', function() {
   const menuBtn = document.querySelector('.menu-btn');
   const footerBtn = document.querySelector('.footer-btn');
