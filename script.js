@@ -19,12 +19,12 @@ function updateCurrentSlideIndicator() {
 updateCurrentSlideIndicator();
 
 prevButton.addEventListener('click', () => {
-  updateIndex(-1); // Move back by one slide
+  updateIndex(-1); 
   updateSlidePosition();
 });
 
 nextButton.addEventListener('click', () => {
-  updateIndex(1); // Move forward by one slide
+  updateIndex(1);
   updateSlidePosition();
 });
 
@@ -42,12 +42,43 @@ function updateIndex(delta) {
   }
 }
 
-function updateSlidePosition() {
-  const slideWidth = testimonialSlide.children[0].getBoundingClientRect().width + 40;
-  testimonialSlide.style.transform = `translateX(-${(currentIndex - 1) * slideWidth}px)`;
-  currentSlideIndicator.textContent = document.documentElement.clientWidth > 1000 ? currentIndex + 1 : currentIndex;
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const footerBtn = document.querySelector('.footer-btn');
+  const mobileNav = document.querySelector('.nav.mobile:not(.nav-footer)');
+  const footerNav = document.querySelector('.nav.mobile.nav-footer');
 
-  const totalSlides = testimonialSlide.children.length;
-  const progressWidth = document.documentElement.clientWidth > 1000 ? ((currentIndex) / (totalSlides - 1)) * 100 : ((currentIndex - 1) / (totalSlides - 1)) * 100;
-  progressBar.style.width = `${progressWidth}%`;
-}
+  menuBtn.addEventListener('click', function() {
+    toggleNav(mobileNav);
+  });
+
+  footerBtn.addEventListener('click', function() {
+    toggleNav(footerNav);
+  });
+
+  function toggleNav(navElement) {
+    if (navElement.classList.contains('active')) {
+      navElement.classList.remove('active');
+      setTimeout(() => {
+        navElement.style.display = 'none';
+      }, 300);
+    } else {
+      navElement.style.display = 'flex';
+      setTimeout(() => {
+        navElement.classList.add('active');
+      }, 0); 
+    }
+  }
+
+  function resizeMobileNav() {
+    if (document.documentElement.clientWidth > 1000) {
+      mobileNav.classList.remove('active');
+      mobileNav.style.display = 'none';
+      footerNav.classList.remove('active');
+      footerNav.style.display = 'none';
+    }
+  }
+
+  window.addEventListener('resize', resizeMobileNav);
+  resizeMobileNav();
+});

@@ -11,7 +11,7 @@
 
 <body>
   <header class="navbar">
-    <div class="nav">
+    <div class="nav desktop">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -20,7 +20,7 @@
       </ul>
     </div>
     <img src="assets/Logo.svg" alt="logo" class="logo" />
-    <div class="nav">
+    <div class="nav desktop">
       <ul>
         <li><a href="#">Page</a></li>
         <li><a href="#">Shop</a></li>
@@ -29,7 +29,24 @@
         <li><i class="fas fa-shopping-cart"></i></li>
       </ul>
     </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
   </header>
+
+  <div class="nav mobile">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Reservation</a></li>
+      <li><a href="#">Page</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><i class="fas fa-search"></i></li>
+      <li><i class="fas fa-shopping-cart"></i></li>
+    </ul>
+  </div>
 
   <article class="article">
     <div class="article-text">
@@ -419,8 +436,8 @@
             <input type="text" placeholder="4 person" name="name" id="name" required />
             <input type="datetime" placeholder="12.25, 2024" name="datetime" id="datetime" required />
             <input type="time" placeholder="11:00 AM" name="time" id="time" required />
+            <button class="article-button book-button">BOOK S TABLE</button>
           </form>
-          <button class="article-button">BOOK S TABLE</button>
         </div>
       </div>
     </section>
@@ -483,7 +500,7 @@
 
     <article class="navbar-footer">
       <a href="#" class="footer-logo"><img src="assets/Logo.svg" alt="logo" class="logo" /></a>
-      <div class="nav">
+      <div class="nav desktop">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Reservation</a></li>
@@ -498,6 +515,22 @@
         <input type="email" placeholder="Enter your email"></input>
         <button class="footer-button"><i class="fas fa-paper-plane"></i></button>
       </form>
+
+      <div class="footer-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="nav mobile nav-footer">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
     </article>
   </main>
 
